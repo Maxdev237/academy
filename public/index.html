@@ -10,6 +10,26 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+    <!-- Site Title -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/css/bootstrap.min.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/css/animate.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/css/owl.carousel.min.css" />
+    <!-- Maginific Popup CSS -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/css/maginific-popup.min.css" />
+    <!-- Nice Select CSS -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/css/nice-select.min.css" />
+    <!-- Icofont -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/css/icofont.css" />
+    <!-- Uicons -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/css/uicons.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/style.css" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,9 +44,43 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Jainli Academic</title>
   </head>
-  <body>
+  <body class="ep-magic-cursor">
+
+    <div id="preloader">
+      <div id="ep-preloader" class="ep-preloader">
+        <div class="animation-preloader">
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Start Cursor To Top  -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <!-- End Cursor To Top -->
+
+    <!-- Start Begin Magic Cursor -->
+    <div id="magic-cursor">
+      <div id="ball"></div>
+    </div>
+    <!-- End Begin Magic Cursor -->
+
+    <!-- Start Back To Top  -->
+    <div class="progress-wrap">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <!-- End Back To Top -->
+   
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +93,35 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+   
+
+    <script src="%PUBLIC_URL%/assets/plugins/js/jquery.min.js"></script>
+    <script src="%PUBLIC_URL%assets/plugins/js/jquery-migrate.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="%PUBLIC_URL%/assets/plugins/js/bootstrap.min.js"></script>
+    <!-- Gsap JS -->
+    <script src="%PUBLIC_URL%/assets/plugins/js/gsap/gsap.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/js/gsap/gsap-scroll-to-plugin.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/js/gsap/gsap-scroll-smoother.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/js/gsap/gsap-scroll-trigger.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/js/gsap/gsap-split-text.js"></script>
+    <!-- Wow JS -->
+    <script src="%PUBLIC_URL%/assets/plugins/js/wow.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="%PUBLIC_URL%/assets/plugins/js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="%PUBLIC_URL%/assets/plugins/js/magnific-popup.min.js"></script>
+    <!-- CounterUp  JS -->
+    <script src="%PUBLIC_URL%/assets/plugins/js/jquery.counterup.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/plugins/js/waypoints.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="%PUBLIC_URL%/assets/plugins/js/nice-select.min.js"></script>
+    <!-- Cursor JS -->
+    <script src="%PUBLIC_URL%/assets/plugins/js/ep-cursor.js"></script>
+    <!-- Back To Top JS -->
+   
+    <!-- Main JS -->
+    <script src="%PUBLIC_URL%/assets/plugins/js/active.js"></script>
   </body>
 </html>

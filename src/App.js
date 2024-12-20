@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import GodoTest from './component/GodoTest';
+import Navbar from './component/Navbar';
+import Body from './component/Body';
 
 
 //modification
@@ -8,7 +10,8 @@ import GodoTest from './component/GodoTest';
 function App() {
   return (
     <div className="App">
-      <GodoTest/>
+     <Navbar/>
+     <Body/>
     </div>
   );
 }

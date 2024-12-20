@@ -15,7 +15,9 @@ function Form() {
   const handleSubmit = async(e) =>{
     e.preventDefault();
     try{
-      const response = await axios.post('', formData);
+      const response = await axios.post('',{ headers:{
+        'auth-token':'a78ff3a24c2e1c1cd95ec01bd704bffc82e54cf3'
+    }}, formData);
       SetResponse('donnée envoyer avec succes');
       console.log('reponse serveur', response.data);
     }
@@ -43,47 +45,3 @@ function Form() {
   
 }
 export default Form
-// import { useState } from "react";
-// import axios from "axios";
-
-// function Form() {
-//   const [formData, SetFormData] = useState({name:'', email:''});
-//   const [response, SetResponse] = useState(null);
-
-//   const handleChange = (e) => { const{name, value} = e.target;
-//   SetFormData({... formData, [name]:value});
-//   };
-
-//   const handleSubmit = async (e) =>{
-//     e.preventDefault();
-//     try{ const response = await axios.post('', formData)
-//       SetResponse('donnée envoyer avec succes')
-//       console.log('reponse serveur', response.date)
-
-//     }
-
-//     catch(error){
-//       SetResponse('erreur lors de lenvoir des données');
-//       console.error('error ', error.response)
-//     }
-//   }
-  
-//     return (
-//       <form>
-//         <div>
-//         <input
-//         type="text" name="name" value={formData.name}
-//         onChange={handleChange} placeholder="Nom"
-//         />
-//         <input
-//         type="email" name="email" value={formData.email}
-//         onChange={handleChange} placeholder="Email"
-//         />
-//         <button type="submit">Envoyer</button>
-//        </div>
-//       </form>
-//     );
-//   }
-  
-//   export default Form;
-
